@@ -324,7 +324,7 @@
 
 					$('#feed-' + data.id + ' .duration-hour').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
-						updateFeeds(data.id, thisFeedDatastreams, '1hours', 0);
+						updateFeeds(data.id, thisFeedDatastreams, '6hours', 0);
 						return false;
 					});
 
@@ -356,7 +356,7 @@
 					if(dataDuration != '' && dataInterval != 0) {
 						updateFeeds(data.id, thisFeedDatastreams, dataDuration, dataInterval);
 					} else {
-						updateFeeds(data.id, thisFeedDatastreams, '1hours', 0);
+						updateFeeds(data.id, thisFeedDatastreams, '6hours', 0);
 					}
 				} else {
 					// Duplicate Example to Build Feed UI
